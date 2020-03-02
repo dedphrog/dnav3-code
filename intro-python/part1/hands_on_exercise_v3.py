@@ -1,5 +1,5 @@
 """Intro to Python - Part 1 - Hands-On Exercise."""
-
+# Mar-02-2020 Pycharm testing.
 
 import math
 import random
@@ -40,11 +40,16 @@ class colors:
         cyan='\033[46m'
         lightgrey='\033[47m'
 
+
+
 # Create a module variable
 module_variable = "I am a module variable."
 
+
+
 # This is how to DEBUG your code
 print(colors.fg.green,"DEBUG: module_variable =", module_variable)
+
 
 
 # Define a function that expects to receive a value for an argument variable
@@ -61,9 +66,10 @@ def my_function(argument_variable):
     print(argument_variable, "...and I can be passed to a function.")
     print(local_variable, "...and I can ONLY be accessed inside a function.")
 
+
+
 # Call the function; supplying the value for the argument variable
 my_function(argument_variable="I am a argument variable.")
-
 
 
 
@@ -75,9 +81,11 @@ except NameError as error:
     print(error)
 
 
+
 # SPACER 
 print()
 print()
+
 
 
 print(colors.fg.red,"Write a print statement that displays both the type and value of `pi`",colors.fg.lightgrey)
@@ -85,9 +93,12 @@ pi = 3.14159
 print(f'PI is approximately equal to {pi}')
 print(f'Python stores this type of data as {type(pi)}')
 
+
+
 # SPACER 
 print()
 print()
+
 
 
 print(colors.fg.red,"Write a conditional to print out if `i` is less than or greater than 50",colors.fg.lightgrey)
@@ -101,6 +112,7 @@ else:
 # SPACER 
 print()
 print()
+
 
 
 print(colors.fg.red,"Write a conditional that prints the color of the picked fruit",colors.fg.lightgrey)
@@ -118,6 +130,7 @@ print()
 print()
 
 
+
 print(colors.fg.red,"Write a function that multiplies two numbers and returns the result.",colors.fg.lightgrey)
 # Define the function here.
 
@@ -127,13 +140,14 @@ def number_multiplier(a, b):
 # TODO: Now call the function a few times to calculate the following answers
 print("Now call the function a few times to calculate the following answers:",colors.fg.lightgrey)
 
+
 # 12 x 96 =
 a = 12
 b = 96
 x = number_multiplier(a,b)
 print(f'12 x 96 = {x}')
-
 print()
+
 
 # 48 x 17 =
 a = 48
@@ -153,6 +167,7 @@ print(f'196523 x 87323 = {x}')
 # SPACER 
 print()
 print()
+
 
 
 # TODO: Implement a FOR loop using range()
